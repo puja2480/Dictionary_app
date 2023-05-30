@@ -1,0 +1,34 @@
+.container-fluid1 {
+    background-color: #1e1d1d;
+    padding: 4px 4px 4px 4px;
+    h1 {
+        padding-left: 0.2em;
+    }
+}
+
+.container-fluid {
+    padding: 4px 4px 4px 4px;
+    margin-top: 1em;
+
+    button {
+        background-color: black;
+        border-style:dotted;
+        border-color: gray;
+        padding: 0.5em 1em;
+        margin: 1.5em 1em 0;
+        border-radius: 2em;
+        color: #ffffff;
+    }
+    input {
+        font-size: 1.5em;
+        background-color: #1e1d1d;
+        color: white;
+    }
+}
+
+.card-body {
+    font-size: 20px;
+    p {
+        padding-left: 1em;
+    }
+}

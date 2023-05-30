@@ -1,0 +1,21 @@
+<div class="container-fluid1">
+  <h1><i class="fa fa-globe" style="font-size:36px"> Free Dictionary</i></h1>
+</div>
+
+<div class="container-fluid">
+  <input type="text" [(ngModel)]="word" placeholder="type here...">
+  <button (click)="searchWord()" class="add">search</button>
+</div>
+
+<h2><u>{{wordDisplay}}</u></h2>
+<div clas="card" *ngFor="let item of wordDefination">
+  <div class="card-body" *ngFor="let x of item.meanings">
+    <h4>{{x.partOfSpeech}}</h4>
+    <div *ngFor="let y of x.definitions; let index = index">
+      <p>{{index + 1}}. {{y.definition}}</p>
+    </div>
+  </div>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
